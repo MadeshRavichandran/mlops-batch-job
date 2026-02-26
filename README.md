@@ -39,8 +39,10 @@ data.csv
 requirements.txt  
 Dockerfile  
 README.md  
-metrics.json  
-run.log  
+metrics.json
+metrics_error.json  
+run.log
+run_error.log  
 
 ---
 
