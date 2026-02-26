@@ -1,0 +1,30 @@
+2026-02-25 22:14:22,043 - INFO - Job started
+2026-02-25 22:14:22,043 - INFO - Config validated: seed=42, window=5, version=v1
+2026-02-25 22:14:22,048 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\Madesh\Documents\PT AI\run.py", line 60, in main
+    df = pd.read_csv(args.input, encoding="utf-8-sig", quotechar='"')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Madesh\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Madesh\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Madesh\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Madesh\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\Madesh\miniconda3\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'wrong.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Madesh\Documents\PT AI\run.py", line 62, in main
+    raise ValueError("Invalid CSV format")
+ValueError: Invalid CSV format
