@@ -1,4 +1,4 @@
-# MLOps Batch Job – 
+# MLOps Batch Job 
 
 ## Overview
 
